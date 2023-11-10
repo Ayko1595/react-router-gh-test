@@ -3,6 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://ayko1595.github.io/react-router-gh-test",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
