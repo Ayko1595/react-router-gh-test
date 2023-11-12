@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Test from './Test.tsx';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import Test, { loader } from './Test.tsx';
 import Fun from './Fun.tsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
       path: "/",
       element: <App />,
@@ -14,6 +14,7 @@ const router = createBrowserRouter([
     {
       path: "/test",
       element: <Test />,
+      loader: loader,
     },
     {
       path: "/fun",
