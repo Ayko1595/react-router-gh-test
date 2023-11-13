@@ -2,15 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Test, { loader } from './Test.tsx';
 import Fun from './Fun.tsx';
 
-const router = createBrowserRouter([
-    {
-        path: '',
-        element: <></>
-    },
+const router = createHashRouter([
     {
       path: "/",
       element: <App />,
@@ -24,9 +20,7 @@ const router = createBrowserRouter([
       path: "/fun",
       element: <Fun />,
     },
-  ], {
-    basename: "./",
-  });
+  ]);
   
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
