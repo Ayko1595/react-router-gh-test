@@ -14,7 +14,7 @@ const Test = () => {
     console.log('TEST', text);
   return (
     <div>
-      <h1>This is another fun Test Component</h1>
+      <h1>This is another fun Test Component that was built with yarn</h1>
       <p>Welcome to the Test component!</p>
     </div>
   );
